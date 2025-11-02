@@ -5,7 +5,7 @@ resource "netlify_dns_zone" "matijsbrinkhuis_nl" {
 
 # DNS Records
 resource "netlify_dns_record" "matijsbrinkhuis_nl_mx_1" {
-  zone_id  = netlify_dns_zone.matijsbrinkhuis_nl.id
+  zone_id = netlify_dns_zone.matijsbrinkhuis_nl.id
 
   hostname = "matijsbrinkhuis.nl"
   type     = "MX"
@@ -15,7 +15,7 @@ resource "netlify_dns_record" "matijsbrinkhuis_nl_mx_1" {
 }
 
 resource "netlify_dns_record" "matijsbrinkhuis_nl_mx_2" {
-  zone_id  = netlify_dns_zone.matijsbrinkhuis_nl.id
+  zone_id = netlify_dns_zone.matijsbrinkhuis_nl.id
 
   hostname = "matijsbrinkhuis.nl"
   type     = "MX"
@@ -25,7 +25,7 @@ resource "netlify_dns_record" "matijsbrinkhuis_nl_mx_2" {
 }
 
 resource "netlify_dns_record" "matijsbrinkhuis_nl_txt_1" {
-  zone_id  = netlify_dns_zone.matijsbrinkhuis_nl.id
+  zone_id = netlify_dns_zone.matijsbrinkhuis_nl.id
 
   hostname = "matijsbrinkhuis.nl"
   type     = "TXT"
@@ -34,7 +34,7 @@ resource "netlify_dns_record" "matijsbrinkhuis_nl_txt_1" {
 }
 
 resource "netlify_dns_record" "matijsbrinkhuis_nl_cname_1" {
-  zone_id  = netlify_dns_zone.matijsbrinkhuis_nl.id
+  zone_id = netlify_dns_zone.matijsbrinkhuis_nl.id
 
   hostname = "fm1._domainkey.matijsbrinkhuis.nl"
   type     = "CNAME"
@@ -43,7 +43,7 @@ resource "netlify_dns_record" "matijsbrinkhuis_nl_cname_1" {
 }
 
 resource "netlify_dns_record" "matijsbrinkhuis_nl_cname_2" {
-  zone_id  = netlify_dns_zone.matijsbrinkhuis_nl.id
+  zone_id = netlify_dns_zone.matijsbrinkhuis_nl.id
 
   hostname = "fm2._domainkey.matijsbrinkhuis.nl"
   type     = "CNAME"
@@ -52,7 +52,7 @@ resource "netlify_dns_record" "matijsbrinkhuis_nl_cname_2" {
 }
 
 resource "netlify_dns_record" "matijsbrinkhuis_nl_cname_3" {
-  zone_id  = netlify_dns_zone.matijsbrinkhuis_nl.id
+  zone_id = netlify_dns_zone.matijsbrinkhuis_nl.id
 
   hostname = "fm3._domainkey.matijsbrinkhuis.nl"
   type     = "CNAME"
