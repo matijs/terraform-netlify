@@ -60,39 +60,3 @@ resource "netlify_dns_record" "matijsbrinkhuis_nl_cname_3" {
   value    = "fm3.matijsbrinkhuis.nl.dkim.fmhosted.com."
 }
 
-#resource "netlify_dns_record" "matijsbrinkhuis_nl_netlify_1" {
-#  zone_id  = netlify_dns_zone.matijsbrinkhuis_nl.id
-#
-#  hostname = "matijsbrinkhuis.nl"
-#  type     = "NETLIFY"
-#  ttl      = 3600
-#  value    = "matijs.netlify.app"
-#}
-
-#resource "netlify_dns_record" "matijsbrinkhuis_nl_netlifyv6_1" {
-#  zone_id  = netlify_dns_zone.matijsbrinkhuis_nl.id
-#
-#  hostname = "matijsbrinkhuis.nl"
-#  type     = "NETLIFYv6"
-#  ttl      = 3600
-#  value    = "matijs.netlify.app"
-#}
-
-#resource "netlify_dns_record" "matijsbrinkhuis_nl_netlify_2" {
-#  zone_id  = netlify_dns_zone.matijsbrinkhuis_nl.id
-#
-#  hostname = "www.matijsbrinkhuis.nl"
-#  type     = "NETLIFY"
-#  ttl      = 3600
-#  value    = "matijs.netlify.app"
-#}
-
-#resource "netlify_dns_record" "matijsbrinkhuis_nl_netlifyv6_2" {
-#  zone_id  = netlify_dns_zone.matijsbrinkhuis_nl.id
-#
-#  hostname = "www.matijsbrinkhuis.nl"
-#  type     = "NETLIFYv6"
-#  ttl      = 3600
-#  value    = "matijs.netlify.app"
-#}
-
