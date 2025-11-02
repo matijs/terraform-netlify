@@ -1,7 +1,9 @@
+# DNS Zone
 resource "netlify_dns_zone" "matijsbrinkhuis_nl" {
   name = "matijsbrinkhuis.nl"
 }
 
+# DNS Records
 resource "netlify_dns_record" "matijsbrinkhuis_nl_mx_1" {
   zone_id  = netlify_dns_zone.matijsbrinkhuis_nl.id
 
