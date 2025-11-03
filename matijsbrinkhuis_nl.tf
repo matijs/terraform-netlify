@@ -1,6 +1,10 @@
 # DNS Zone
 resource "netlify_dns_zone" "matijsbrinkhuis_nl" {
   name = "matijsbrinkhuis.nl"
+
+  lifecycle {
+    prevent_destroy = true
+  }
 }
 
 # DNS Records
